@@ -1,0 +1,10 @@
+<form action="/user/create" method = "POST">
+    ID     <input type = "text" name = "id"><br/>
+    PW      <input type = "password" name = "password"><br/>
+    PW 확인 <input type = "password" name = "password_cfrm">
+    <input type = "submit" value = "회원가입"><br/>
+    <%if @msg%>
+        <%=@msg%>
+    <%end%>
+    
+</form>

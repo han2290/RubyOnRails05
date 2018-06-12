@@ -1,0 +1,15 @@
+유저 목록
+<table class="table table-hover">
+    <thead>
+        <th>ID</th>
+        <th>PW</th>
+    </thead>
+    <tbody>
+        <%@users.each do |user|%>
+        <tr>
+            <td><%=user[0]%></td>
+            <td><%=user[1]%></td>
+        </tr>
+        <%end%>
+    </tbody>
+</table>
